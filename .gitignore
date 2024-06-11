@@ -1,0 +1,7 @@
+.env/*
+.env
+
+Web.config
+packages.config
+Web.Debug.config
+Web.Release.config

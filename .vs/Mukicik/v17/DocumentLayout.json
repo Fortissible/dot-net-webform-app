@@ -1,0 +1,279 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\mukicik\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:mukicik\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\mukicik\\insert.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:mukicik\\insert.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:Mukicik\\Global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\mukicik\\insert.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:mukicik\\insert.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:Mukicik\\Register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Register.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:Mukicik\\Register.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\mukicik\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:mukicik\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\mukicik\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:mukicik\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|c:\\users\\wildan pc\\downloads\\practicum pattern design software\\cases\\case1\\mukicik\\mukicik\\update_delete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:mukicik\\update_delete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\mukicik\\insert.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:mukicik\\insert.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\mukicik\\update_delete.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:mukicik\\update_delete.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|c:\\users\\wildan pc\\downloads\\practicum pattern design software\\cases\\case1\\mukicik\\mukicik\\update_delete.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:mukicik\\update_delete.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:Mukicik\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:Mukicik\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DBFCFA72-FA89-4B20-A5A2-32E55FC2DC84}|Mukicik\\Mukicik.csproj|solutionrelative:Mukicik\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 159,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "update_delete.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\update_delete.aspx.designer.cs",
+              "RelativeDocumentMoniker": "Mukicik\\update_delete.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\update_delete.aspx.designer.cs",
+              "RelativeToolTip": "Mukicik\\update_delete.aspx.designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T13:02:16.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "update_delete.aspx",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\update_delete.aspx",
+              "RelativeDocumentMoniker": "Mukicik\\update_delete.aspx",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\update_delete.aspx",
+              "RelativeToolTip": "Mukicik\\update_delete.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-09T06:07:40.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\packages.config",
+              "RelativeDocumentMoniker": "Mukicik\\packages.config",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\packages.config",
+              "RelativeToolTip": "Mukicik\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-09T16:26:56.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "insert.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\insert.aspx.cs",
+              "RelativeDocumentMoniker": "Mukicik\\insert.aspx.cs",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\insert.aspx.cs",
+              "RelativeToolTip": "Mukicik\\insert.aspx.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowEIAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T06:39:34.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "insert.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\insert.aspx.designer.cs",
+              "RelativeDocumentMoniker": "Mukicik\\insert.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\insert.aspx.designer.cs",
+              "RelativeToolTip": "Mukicik\\insert.aspx.designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T06:52:02.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "update_delete.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\update_delete.aspx.cs",
+              "RelativeDocumentMoniker": "Mukicik\\update_delete.aspx.cs",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\update_delete.aspx.cs",
+              "RelativeToolTip": "Mukicik\\update_delete.aspx.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAYwDMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T06:20:55.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "insert.aspx",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\insert.aspx",
+              "RelativeDocumentMoniker": "Mukicik\\insert.aspx",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\insert.aspx",
+              "RelativeToolTip": "Mukicik\\insert.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-09T06:07:24.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.aspx",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Register.aspx",
+              "RelativeDocumentMoniker": "Mukicik\\Register.aspx",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Register.aspx",
+              "RelativeToolTip": "Mukicik\\Register.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-03T13:15:16.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "index.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\index.aspx.cs",
+              "RelativeDocumentMoniker": "Mukicik\\index.aspx.cs",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\index.aspx.cs",
+              "RelativeToolTip": "Mukicik\\index.aspx.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowDYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T06:06:18.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.aspx",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\index.aspx",
+              "RelativeDocumentMoniker": "Mukicik\\index.aspx",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\index.aspx",
+              "RelativeToolTip": "Mukicik\\index.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-04T05:49:34.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\styles.css",
+              "RelativeDocumentMoniker": "Mukicik\\styles.css",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\styles.css",
+              "RelativeToolTip": "Mukicik\\styles.css",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-04T05:04:38.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Web.config",
+              "RelativeDocumentMoniker": "Mukicik\\Web.config",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Web.config",
+              "RelativeToolTip": "Mukicik\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-04T04:35:32.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Mukicik\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Global.asax.cs",
+              "RelativeToolTip": "Mukicik\\Global.asax.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T04:21:25.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Register.aspx.designer.cs",
+              "RelativeDocumentMoniker": "Mukicik\\Register.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Register.aspx.designer.cs",
+              "RelativeToolTip": "Mukicik\\Register.aspx.designer.cs",
+              "ViewState": "AQIAAOcAAAAAAAAAAAAhwPgAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T04:15:58.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Register.aspx.cs",
+              "RelativeDocumentMoniker": "Mukicik\\Register.aspx.cs",
+              "ToolTip": "C:\\Users\\Wildan PC\\Downloads\\Practicum Pattern Design Software\\cases\\case1\\Mukicik\\Mukicik\\Register.aspx.cs",
+              "RelativeToolTip": "Mukicik\\Register.aspx.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAF0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T04:09:24.379Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
