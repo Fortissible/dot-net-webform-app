@@ -1,7 +1,6 @@
 ﻿using Npgsql;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Web;
@@ -10,15 +9,15 @@ using System.Web.UI.WebControls;
 
 namespace Mukicik
 {
-    public partial class index : System.Web.UI.Page
+    public partial class ProductList : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {   
+        {
             if (!IsPostBack)
             {
                 LoadData();
-                
-                // REGION PUBLIC/OPEN
+
+                /// REGION PUBLIC/OPEN
                 if (User.Identity.IsAuthenticated)
                 {
                     // User is authenticated, show welcome panel
@@ -42,14 +41,14 @@ namespace Mukicik
 
             // INTI KONEKSI KE DATABASE
             using (NpgsqlConnection conn = new NpgsqlConnection(connString))
-            {   
+            {
                 // BUKA KONEKSI KE DATABASE
                 conn.Open();
-                using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT name, rating, price, image FROM products ORDER BY rating DESC LIMIT 6", conn))
-                {   
+                using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT name, rating, price, image FROM products", conn))
+                {
                     // BACA PERINTAH NpgsqlCommand
                     using (NpgsqlDataReader reader = cmd.ExecuteReader())
-                    {   
+                    {
                         // SELAGI PROSES MEMBACA BERJALAN
                         while (reader.Read())
                         {
@@ -64,20 +63,6 @@ namespace Mukicik
                             html.Append($"<div class=\"product-rating\">{rating} ⭐</div>");
                             html.Append($"<div class=\"product-price\">{price}</div>");
                             html.Append("</div>");
-                        }
-                    }
-                }
-
-                using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT * FROM active_users", conn))
-                {
-                    // BACA PERINTAH NpgsqlCommand
-                    using (NpgsqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        // SELAGI PROSES MEMBACA BERJALAN
-                        while (reader.Read())
-                        {
-                            string counter = reader["counter"].ToString();
-                            LiteralActiveCounter.Text = counter;
                         }
                     }
                 }

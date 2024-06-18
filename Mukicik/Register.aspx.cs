@@ -11,7 +11,11 @@ namespace Mukicik
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            /// REGION UNAUTHENTICATED
+            if (User.Identity.IsAuthenticated)
+            {
+                Response.Redirect("index.aspx");
+            }
         }
 
         protected void CalendarDOB_SelectionChanged(object sender, EventArgs e)
@@ -57,7 +61,7 @@ namespace Mukicik
         {   
             string password = TextBoxPassword.Text;
             bool isMale = RadioButtonMale.Checked;
-            string dob = TextBoxDOB.Text;
+            DateTime dob = DateTime.Parse(TextBoxDOB.Text);
             string gender;
             if (isMale)
             {

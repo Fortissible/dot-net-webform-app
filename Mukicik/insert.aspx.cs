@@ -12,8 +12,15 @@ namespace Mukicik
     public partial class insert : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
+        {   
+            /// REGION AUTHORIZED 
+            if (!User.Identity.IsAuthenticated)
+            {
+                Response.Redirect("Login.aspx");
+            } else
+            {
+                LiteralUserName.Text = User.Identity.Name;
+            }
         }
 
         protected void ValidateRating(object source, ServerValidateEventArgs args)

@@ -1,9 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Mukicik.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductList.aspx.cs" Inherits="Mukicik.ProductList" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Mukicik: Home</title>
+    <title>Mukicik: Products</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.3/jquery.validate.min.js"></script>
@@ -133,9 +133,7 @@
                     </div>
                 </div>
                 <div class="d-flex flex-row align-items-center">
-                    <p style="margin-bottom: 0px">Active User: <asp:Literal ID="LiteralActiveCounter" runat="server" />|</p>
-                    <div style="width: 16px"></div>
-                    <p style="margin-bottom: 0px">   <asp:Literal ID="LiteralUserName" runat="server" />!</p>
+                    <p style="margin-bottom: 0px"><asp:Literal ID="LiteralUserName" runat="server" />!</p>
                     <a class="nav-link" href="Logout.aspx">Logout</a>
                 </div>
             </nav>
@@ -158,29 +156,12 @@
             </nav>
         </asp:PlaceHolder>
     </header>
-    
-    <div class="container content-container">  
-        <div class="row">
-            <div class="col-md-6 image-container">  
-                <asp:Image ID="Image1" runat="server" Height="520px" ImageAlign="Right" src="kisspng-acoustic-guitar-cutaway-acoustic-electric-guitar-c-spanish-guitar-5b2f9222e699d9.3264763315298442589446.jpg" ImageUrl="~/kisspng-acoustic-guitar-cutaway-acoustic-electric-guitar-c-spanish-guitar-5b2f9222e699d9.3264763315298442589446.jpg" />
-            </div>
-            <div class="col-md-6 text-content">  <h1 style="font-size:66px;">Mukicik</h1>
-                <h3>
-                    An innovative music selling store with competitive prices.
-                    Lorem ipsum dolor sit amet.
-                </h3>
-                <form id="form1" runat="server">
-                    <div>
-                        <asp:Button ID="Button1" runat="server" Text="Be a new member" CssClass="btn, btn-primary" PostBackUrl="./Register.aspx" />
-                    </div>
-                </form>
-            </div>
-        </div>
+
+    <h2 class="section-title" style="margin: 0px 16px 8px 64px">List Products</h2>
+    <div class="col-md-6 image-container">  
+        <asp:Image ID="Image1" runat="server" Height="250px" ImageAlign="Right" src="kisspng-acoustic-guitar-cutaway-acoustic-electric-guitar-c-spanish-guitar-5b2f9222e699d9.3264763315298442589446.jpg" ImageUrl="~/kisspng-acoustic-guitar-cutaway-acoustic-electric-guitar-c-spanish-guitar-5b2f9222e699d9.3264763315298442589446.jpg" />
     </div>
-
-    <h2 class="section-title" style="margin: 0px 16px 8px 64px">Top Products</h2>
-
-    <div id="ProductContainer" class="product-container" style="margin: 0px 25vh 8px 25vh" runat="server">
+    <div id="ProductContainer" class="product-container" style="margin: 0px 0px 8px 8px" runat="server">
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -190,4 +171,3 @@
     </footer>
 </body>
 </html>
-

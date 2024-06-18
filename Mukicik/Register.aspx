@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Register</title>
+    <title>Mukicik: Register</title>
     <link href="styles.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -62,15 +62,19 @@
     <header class="jumbotron jumbotron-fluid text-center" style="padding: 0">
         <h1 class="display-4">Mukicik</h1>
         <p class="lead">A fun and educational music learning platform</p>
-        <nav class="nav justify-content-center">
-            <a class="nav-link" href="Index.aspx">Home</a>
-            <a class="nav-link" href="Register.aspx">Register</a>
-            <div class="dropdown">
-              <p class="dropbtn nav-link">Dropdown</p>
-              <div class="dropdown-content">
-                <a href="insert.aspx">Insert Product</a>
-                <a href="update_delete.aspx">Update/Delete Product</a>
-              </div>
+        <nav class="nav justify-content-around">
+            <div class="d-flex flex-row">
+                <a class="nav-link" href="Index.aspx">Home</a>
+                <div class="dropdown">
+                  <p class="dropbtn nav-link">Products</p>
+                  <div class="dropdown-content">
+                    <a href="ProductList.aspx">View Products</a>
+                  </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row">
+                <a class="nav-link" href="Register.aspx">Register</a>
+                <a class="nav-link" href="Login.aspx">Login</a>
             </div>
         </nav>
     </header>

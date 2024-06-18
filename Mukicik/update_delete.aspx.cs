@@ -16,6 +16,15 @@ namespace Mukicik
         {
             if (!IsPostBack)
             {
+                /// REGION AUTHORIZED 
+                if (!User.Identity.IsAuthenticated)
+                {
+                    Response.Redirect("Login.aspx");
+                }
+                else
+                {
+                    LiteralUserName.Text = User.Identity.Name;
+                }
                 GridView1.DataSource = GetProducts();
                 GridView1.DataBind();
             }
