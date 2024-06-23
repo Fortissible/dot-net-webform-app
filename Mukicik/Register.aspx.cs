@@ -71,50 +71,17 @@ namespace Mukicik
             {
                 gender = "Wanita";
             }
+            
+            UserRepository userRepository = new UserRepository("PostgresConnection");
+
+            int id = userRepository.GetLastUserId();
+            User user = ModelFactory.CreateUser(id, name, email, password, gender, dob, "dummy")
+
             // Insert user baru ke database
-            // AWAL MULA KONEKSI DATABASE
-            string connString = System.Configuration.ConfigurationManager.ConnectionStrings["PostgresConnection"].ConnectionString;
-            using (NpgsqlConnection connection = new NpgsqlConnection(connString))
-            {
-                try
-                {
-                    string id;
-                    int intId;
-                    int defaultId = 1;
-                    /// BUKA KONEKSI KE DATABASE
-                    connection.Open();
-
-                    /// AMBIL DATA ID TERAKHIR TERBARU
-                    using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT id FROM users ORDER BY id DESC LIMIT 1;", connection))
-                    {
-                        using (NpgsqlDataReader reader = cmd.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                id = reader["id"].ToString();
-                                int.TryParse(id, out intId);
-                                defaultId += intId;
-                            }
-                        }
-                    }
-
-                    using (NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO users VALUES (@id, @username, @email, @password, @gender, @dob);", connection))
-                    {
-                        cmd.Connection = connection;
-                        cmd.Parameters.AddWithValue("@id", defaultId);
-                        cmd.Parameters.AddWithValue("@username", name);
-                        cmd.Parameters.AddWithValue("@email", email);
-                        cmd.Parameters.AddWithValue("@password", password);
-                        cmd.Parameters.AddWithValue("@gender", gender);
-                        cmd.Parameters.AddWithValue("@dob", dob);
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-                catch (Exception ex)
-                {
-                    // Show error message using JavaScript
-                    ClientScript.RegisterStartupScript(this.GetType(), "ErrorMessage", $"alert('Failed to insert product. Error: {ex.Message}');", true);
-                }
+            try {
+                userRepository.AddUser(user);
+            } catch (Exception ex) {
+                ClientScript.RegisterStartupScript(this.GetType(), "ErrorMessage", $"alert('Failed to insert product. Error: {ex.Message}');", true);
             }
         }
 

@@ -31,57 +31,32 @@ namespace Mukicik
             string email = TextBoxEmail.Text;
             string password = TextBoxPassword.Text;
 
-            string connString = System.Configuration.ConfigurationManager.ConnectionStrings["PostgresConnection"].ConnectionString;
-            using (NpgsqlConnection connection = new NpgsqlConnection(connString))
-            {
-                try
+            UserRepository userRepository = new UserRepository("PostgresConnection");
+            try {
+                string userName = userRepository.Login(email, password);
+
+                // Handle Remember Me checkbox
+                if (CheckBoxRememberMe.Checked)
                 {
-                    connection.Open();
-                    using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT * FROM users WHERE email = @Email AND password = @Password;", connection))
-                    {
-                        cmd.Parameters.AddWithValue("Email", email);
-                        cmd.Parameters.AddWithValue("Password", password);
-
-                        using (NpgsqlDataReader reader = cmd.ExecuteReader())
-                        {
-                            if (reader.HasRows) /// KALO ADA DATA YANG KETEMU
-                            {
-
-                                reader.Read();
-                                string userName = reader["username"].ToString();
-
-                                // Handle Remember Me checkbox
-                                if (CheckBoxRememberMe.Checked)
-                                {
-                                    HttpCookie rememberMeCookie = new HttpCookie("RememberMe");
-                                    rememberMeCookie.Value = email;
-                                    rememberMeCookie.Expires = DateTime.Now.AddDays(30); // Set expiration as needed
-                                    Response.Cookies.Add(rememberMeCookie);
-                                }
-                                else
-                                {
-                                    HttpCookie rememberMeCookie = new HttpCookie("RememberMe");
-                                    rememberMeCookie.Expires = DateTime.Now.AddDays(-9999); // Expire the cookie
-                                    Response.Cookies.Add(rememberMeCookie);
-                                }
-
-                                /// KODE UNTUK MEMBUAT USER SESSION LOGIN
-                                FormsAuthentication.SetAuthCookie(userName, false);
-                                Response.Redirect("Index.aspx");
-                            }
-                            else
-                            {
-                                LabelErrorMessage.Text = "Invalid email or password.";
-                                LabelErrorMessage.Visible = true;
-                            }
-                        }
-                    }
+                    HttpCookie rememberMeCookie = new HttpCookie("RememberMe");
+                    rememberMeCookie.Value = email;
+                    rememberMeCookie.Expires = DateTime.Now.AddDays(30); // Set expiration as needed
+                    Response.Cookies.Add(rememberMeCookie);
                 }
-                catch (Exception ex)
+                else
                 {
-                    LabelErrorMessage.Text = $"Error: {ex.Message}";
-                    LabelErrorMessage.Visible = true;
+                    HttpCookie rememberMeCookie = new HttpCookie("RememberMe");
+                    rememberMeCookie.Expires = DateTime.Now.AddDays(-9999); // Expire the cookie
+                    Response.Cookies.Add(rememberMeCookie);
                 }
+
+                /// KODE UNTUK MEMBUAT USER SESSION LOGIN
+                FormsAuthentication.SetAuthCookie(userName, false);
+                Response.Redirect("Index.aspx");
+
+            } catch (Exception ex) {
+                LabelErrorMessage.Text = "Invalid email or password.";
+                LabelErrorMessage.Visible = true;
             }
         }
 
