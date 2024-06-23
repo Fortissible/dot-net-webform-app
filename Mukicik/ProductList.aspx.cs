@@ -35,37 +35,28 @@ namespace Mukicik
         }
 
         private void LoadData()
-        {
-            string connString = System.Configuration.ConfigurationManager.ConnectionStrings["PostgresConnection"].ConnectionString;
+        {   
             StringBuilder html = new StringBuilder();
 
-            // INTI KONEKSI KE DATABASE
-            using (NpgsqlConnection conn = new NpgsqlConnection(connString))
-            {
-                // BUKA KONEKSI KE DATABASE
-                conn.Open();
-                using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT name, rating, price, image FROM products", conn))
+            ProductRepository productRepository = new ProductRepository("PostgresConnection");
+            try {
+                List<Product> listProduct = productRepository.GetAllProducts();
+                foreach(var product in listProduct)
                 {
-                    // BACA PERINTAH NpgsqlCommand
-                    using (NpgsqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        // SELAGI PROSES MEMBACA BERJALAN
-                        while (reader.Read())
-                        {
-                            string title = reader["name"].ToString();
-                            string rating = reader["rating"].ToString();
-                            string price = string.Format("Rp{0:N0}", reader["price"]);
-                            string imageUrl = reader["image"].ToString();
+                    string title = product.Name.ToString();
+                    string rating = product.Rating.ToString();
+                    string price = product.Price.ToString();
+                    string imageUrl = product.Image.ToString();
 
-                            html.Append("<div class=\"product\">");
-                            html.Append($"<img src=\"{imageUrl}\" alt=\"{title}\"/>");
-                            html.Append($"<div class=\"product-title\">{title}</div>");
-                            html.Append($"<div class=\"product-rating\">{rating} ⭐</div>");
-                            html.Append($"<div class=\"product-price\">{price}</div>");
-                            html.Append("</div>");
-                        }
-                    }
+                    html.Append("<div class=\"product\">");
+                    html.Append($"<img src=\"{imageUrl}\" alt=\"{title}\"/>");
+                    html.Append($"<div class=\"product-title\">{title}</div>");
+                    html.Append($"<div class=\"product-rating\">{rating} ⭐</div>");
+                    html.Append($"<div class=\"product-price\">{price}</div>");
+                    html.Append("</div>");
                 }
+            } catch (Exception ex) {
+                ClientScript.RegisterStartupScript(this.GetType(), "ErrorMessage", $"alert('{ex.Message}');", true);
             }
 
             ProductContainer.InnerHtml = html.ToString();
