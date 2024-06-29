@@ -86,7 +86,8 @@ namespace Mukicik.Repositories
             }
         }
 
-        public string GetUserByEmailAndPassword(string email, string password)
+
+        public string Login(string email, string password)
         {
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
             {

@@ -31,33 +31,15 @@ namespace Mukicik
         }
 
         private DataTable GetProducts()
-        {
-            DataTable dt = new DataTable();
-
-            ///BUKA KONEKSI KE DATABASE
-            string connString = System.Configuration.ConfigurationManager.ConnectionStrings["PostgresConnection"].ConnectionString;
-
-            using (NpgsqlConnection connection = new NpgsqlConnection(connString))
-            {
-                try
-                {   
-                    /// OPEN CONNECTION
-                    connection.Open();
-                    /// QUERY             id NAMANYA DIUBAH JADI ProductId
-                    string query = "SELECT id AS ProductId, name AS ProductName, price AS ProductPrice, image AS ProductImage, rating AS ProductRating FROM products";
-                    using (NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(query, connection))
-                    {
-                        adapter.Fill(dt);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    // Handle exception (e.g., log error, show message)
-                    ClientScript.RegisterStartupScript(this.GetType(), "ErrorMessage", $"alert('Failed to retrieve products. Error: {ex.Message}');", true);
-                }
+        {   
+            ProductRepository productRepository = new ProductRepository("PostgresConnection");
+            
+            try {
+                DataTable dt = productRepository.GetAllProductsDataTable();
+                return dt;
+            } catch (Exception ex) {
+                ClientScript.RegisterStartupScript(this.GetType(), "ErrorMessage", $"alert('{ex.Message}');", true);
             }
-
-            return dt;
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -90,54 +72,26 @@ namespace Mukicik
         private void DeleteProduct(string id)
         {   
             // BUKA KONEKSI KE DATABASE
-            string connString = System.Configuration.ConfigurationManager.ConnectionStrings["PostgresConnection"].ConnectionString;
-            using (NpgsqlConnection connection = new NpgsqlConnection(connString))
-            {
-                try
-                {
-                    connection.Open();
-
-                    string query = "DELETE FROM products WHERE id = @id";
-                    using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@id", int.Parse(id));
-                        command.ExecuteNonQuery();
-                        ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", "alert('Product deleted successfully!');", true);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    ClientScript.RegisterStartupScript(this.GetType(), "ErrorMessage", $"alert('Failed to delete product. Error: {ex.Message}');", true);
-                }
+            ProductRepository productRepository = new ProductRepository("PostgresConnection");
+            try {
+                productRepository.DeleteProduct(id);
+                ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", "alert('Product deleted successfully!');", true);
+            } catch (Exception ex) {
+                ClientScript.RegisterStartupScript(this.GetType(), "ErrorMessage", $"alert('{ex.Message}');", true);
             }
         }
 
         private void UpdateProduct(string id, string name, string price, string image, string rating)
         {   
-            // DATABASE DIBUKA
-            string connString = System.Configuration.ConfigurationManager.ConnectionStrings["PostgresConnection"].ConnectionString;
-            using (NpgsqlConnection connection = new NpgsqlConnection(connString))
-            {
-                try
-                {
-                    connection.Open();
-                    /// QUERY DATA KE DATABASE
-                    string query = "UPDATE products SET name = @name, price = @price, image = @image, rating = @rating WHERE id = @id";
-                    using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@id", int.Parse(id));
-                        command.Parameters.AddWithValue("@name", name);
-                        command.Parameters.AddWithValue("@price", decimal.Parse(price));
-                        command.Parameters.AddWithValue("@image", image);
-                        command.Parameters.AddWithValue("@rating", decimal.Parse(rating));
-                        command.ExecuteNonQuery();
-                        ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", "alert('Product updated successfully!');", true);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    ClientScript.RegisterStartupScript(this.GetType(), "ErrorMessage", $"alert('Failed to update product. Error: {ex.Message}');", true);
-                }
+            Product product = ModelFactory.CreateProduct(id, name, price, image, rating);
+
+            ProductRepository productRepository = new ProductRepository("PostgresConnection");
+
+            try {
+                productRepository.UpdateProduct(product);
+                ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", "alert('Product updated successfully!');", true);
+            } catch (Exception ex) {
+                ClientScript.RegisterStartupScript(this.GetType(), "ErrorMessage", $"alert('{ex.Message}');", true);
             }
         }
     }

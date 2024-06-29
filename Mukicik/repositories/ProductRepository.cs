@@ -125,6 +125,31 @@ namespace Mukicik.Repositories
             return products;
         }
 
+        public DataTable GetAllProductsDataTable()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                using (NpgsqlConnection conn = new NpgsqlConnection(connectionString))
+                {
+                    // BUKA KONEKSI KE DATABASE
+                    conn.Open();
+                    string query = "SELECT id AS ProductId, name AS ProductName, price AS ProductPrice, image AS ProductImage, rating AS ProductRating FROM products";
+                    using (NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(query, conn))
+                    {
+                        adapter.Fill(dt);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Throw error
+                ex.Data.Add("ProductRepository", "Failed to get products data table. Error: {ex.Message}");
+                throw;
+            }
+            return dt;
+        }
+
         public void UpdateProduct(Product product)
         {
             try
